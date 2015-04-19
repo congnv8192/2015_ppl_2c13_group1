@@ -1,0 +1,54 @@
+
+	/**
+	 * update file content by removing ...
+	 * @requires: text file exists, file data in format .txt,
+	 * @modifies
+	 * @effects
+	 * 
+	 * read file content into a string content
+	 * remove redundant spaces in content
+	 * for each word in content
+	 * 	capitalize first letter
+	 * 	normalize remaining letters
+	 * print content to "data2.txt"
+	 * ...
+	 */
+	
+	/** 
+	 * count number of lines in the original content and number of distinct words...
+	 * @requires: file updated exists
+	 * @modifies
+	 * @effects:  
+	 * 
+	 * read file content into a string content
+	 * count number of lines in original content
+	 * for each word in updated content
+	 * count number of distinct words
+	 * return updated content
+	 */
+
+	/**
+	 * write the updated content to another text file named "data2.txt"
+	 * @requires: updated file 
+	 * @modifies
+	 * @effects: 
+	 * write content into text file
+	 * read file content into a string content
+	 * move updated content from "data.txt" to "data2.txt"
+	 * return updated content
+	 */
+
+	/**
+	 * display a brief text-based report summarizing the results....
+	 * @requires: output of tasks 2,3,4
+	 * modifies
+	 * effects: display the report following format 
+	 * for each original line 
+	 * count total number in original text content
+	 * for each original word
+	 * count total number in original text content
+	 * count number of redundant spaces removed in updated text content
+	 * count number of distinct words
+	 * print content to data2.txt
+	 * return updated content 
+	 */
