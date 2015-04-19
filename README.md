@@ -4,10 +4,3 @@ PERFECT TAKE TIME :D
 
 
 
-/**
-	 * display a brief text-based report summarizing the results....
-	 * @requires: output of tasks 2,3,4
-	 * modifies
-	 * effects: display the report following format 
-	 * 
-	 */
