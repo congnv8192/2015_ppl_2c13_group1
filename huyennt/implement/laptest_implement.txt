@@ -1,0 +1,89 @@
+import java.util.ArrayList;
+
+public class TextProcessor
+{
+ public static void main(String[] args)  {
+      
+       UpdateData();
+      CountLines();
+       CountDWordsUpData();
+      
+   }
+
+    */
+*update the file content by removing all the redundant spaces (i.e. 2 or more spaces) and nomalizing word 
+*@require file not equal null /\ a.length>1
+
+*@effect 
+read file content into String content
+    *   remove redundant spaces in content 
+    *   for each word in content
+    *       capitalize first letter
+    *       lowercase remaining letters
+    *   
+    *   returns updated content
+
+*
+*
+    public static void UpdateData()
+    {
+       TextIO.readFile(filepath);
+        TextIO.writeFile("data2.txt");
+        while (!TextIO.eof())
+       {
+           String[] spl = TextIO.getln().trim().toLowerCase().split(" ");
+           for (int i = 0; i < spl.length; i++)
+            {
+               String word = spl[i];
+               if (word.length() > 0)
+                   TextIO.put(Character.toUpperCase(word.charAt(0)) + word.substring(1, word.length()) + (i                  != a.length - 1 ? " " : ""));
+            }
+            TextIO.putln();
+       }
+    }
+
+  /*
+*
+* count the number of lines in the original content and number of distinct words (i.e. all words that
+are the same are counted once) in the updated content.
+*@require data.txt not equal null
+*@modify
+*@effect :
+* read the content
+*count the line & use for loop  to count distint word 
+
+*   
+
+
+
+//count line in original content
+   public static int CountLines()
+   {
+       TextIO.readFile("data.txt");
+       TextIO.writeStandardOutput();
+
+       int line_count = 0;
+        int word_count = 0;
+        while (!TextIO.eof())
+        {
+           String line = TextIO.getln();
+           if (line.length() > 0)
+                line_count++;
+           
+          
+           
+          
+            String[] spl = line.split(" ");
+           for(String word : spl)
+               if(word.length() > 0)
+                    word_count++;
+        }
+       TextIO.putln("The number of lines in original data is:" + line_count);
+       TextIO.putln("The number of words in original data is:" + word_count);
+        return line_count;
+    }
+    
+    
+   
+    
+ 
